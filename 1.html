@@ -1,0 +1,112 @@
+<div class="image-rotator">
+    <div class="slides">
+      <div class="slide">
+        <p class="text-4xl font-semibold leading-normal text-center"> <br>
+          It's <span class="font-bold text-emerald-600">STARBUCKS</span><img class="img1"
+            src="coffee-removebg-preview.png" alt="Image 1"></p>
+      </div>
+
+      <div class="slide">
+        <p class="text-4xl font-semibold leading-normal text-center">It's not just a coffee <br>
+          It's <span class="font-bold text-emerald-600">STARBUCKS</span><img class="img2"
+            src="coffee3-removebg-preview.png" alt="Image 2">
+      </div>
+
+      <div class="slide">
+        <p class="text-4xl font-semibold leading-normal text-center">It's not just a coffee <br>
+          It's <span class="font-bold text-emerald-600">STARBUCKS</span><img class="img3"
+            src="coffee-removebg-preview (1).png" alt="Image 3">
+      </div>
+      <div class="slide">
+        <p class="text-4xl font-semibold leading-normal text-center">It's not just a coffee <br>
+          It's <span class="font-bold text-emerald-600">STARBUCKS</span><img class="img4"
+            src="coffee4-removebg-preview.png" alt="Image 4">
+      </div>
+    </div>
+  </div>
+  border: 1px solid #fff;  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+
+  .image-rotator {
+    width: 80%;
+    max-width: 900px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    animation: slide 50s infinite;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+    margin-top: 50px;
+}
+
+.slide img {
+    width: 100%;
+    height: 700px;
+    display: block;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0%); }
+}
+.img2{
+    height: 10px;
+    width: 20px;
+}
+.img1{
+    height: 100px;
+}
+.img3{
+    height: 100px;
+}
+.img4{
+    height: 100px;
+}
+
+
+<div class="image-container animate__animated animate__bounceInLeft">
+    <img src="https://s3-us-west-1.amazonaws.com/cdn.soloyal.co/blog-images/benefits-at-starbucks-employee-guide.jpg"
+      alt="Sample Image">
+    <div class="overlay-text">We will treat our customers with a happy face</div>
+  </div>
+
+
+
+
+  image-container {
+    position: relative;
+    width: 80%;
+    width: 500px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin: 10px 10px;
+}
+
+
+.overlay-text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(14, 64, 6, 0.5); /* Black background with transparency */
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0.8; /* Transparency of the text */
+}
